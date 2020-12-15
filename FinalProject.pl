@@ -60,27 +60,3 @@ print_result([H|T]) :-
 	print_result(T).	/*Go to next token*/
 
 print_result([]).	/*End Printing*/
-
-/*
-Algorithm Pseudocode in C++:
-	
-	String Str;
-	String Condition;
-	String Current_token[];
-	String Result_list[];
-
-	cin >> Str >> Condition;
-
-	for(i = 0; i < length(Str); i++){
-		for(j = 0; j < length(Condition); j++){
-			if(Str[i] == Condition[j]){
-				if(Current_token[] != empty){
-					append(Current_token[] -> Result_list[]);
-				}
-			}else{
-				append(Str[i] -> Current_token[]);
-			}
-		}
-	}
-	print(Result_list[ tokens[] ]);
-*/
